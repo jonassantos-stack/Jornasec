@@ -1,86 +1,277 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="jonas" content="width=device-width, initial-scale=1.0">
-    <title>JORNASEC - VIII Jornada Acadêmica</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/imagem_jornasec.png">
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #003399;
+}
 
-</head>
-<body>
+header {
+    background: linear-gradient(90deg, #002f87, #0066ff);
+    padding: 25px;
+    text-align: center;
+    color: white;
+    display: flex;              /* coloca lado a lado */
+    justify-content: center;    /* centraliza horizontalmente */
+    align-items: center;        /* alinha verticalmente */
+    gap: 20px;                  /* espaço entre a imagem e o texto */
+    flex-wrap: wrap;            /* permite quebrar no celular */
+}
 
-<header>
-    <img src="img/imagem_jornasec.png" alt="Icone">
-    <h2>VIII JORNADA ACADÊMICA DE SECRETARIADO EXECUTIVO</h2>
-     <h2>UNIVERSIDADE FEDERAL DE SERGIPE – UFS</h2>
-</header>
+header img {
+    width: 120px;   /* diminua o valor como quiser */
+    height: auto;   /* mantém a proporção correta */
+}
 
-<div class="container">
-    <br>
+h1, h2, h3 {
+    margin: 10px 0;
+}
 
-    <h2 class="data-evento">📅 04 de Fevereiro de 2026 </h2>
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+    margin: 40px auto;      /* afasta do header e footer */
+    border: 1px solid #d3d3d3;  /* borda discreta */
+    border-radius: 15px;        /* bordas arredondadas */
+    background: #ffffff;        /* fundo branco destacado */
+    box-shadow: 0 0 8px rgba(0,0,0,0.08); /* sombra suave opcional */    
+}
 
-    <br>
+/* CONTADOR */
+#contador {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #002f87;
+    background: #e6f0ff;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 12px;
+}
 
-    <h2 class="titulo-palestrante">Tema: O papel do Secretariado na preservação da cultura e do clima organizacional</h2>
-     <br>
-    <h2 class="horario">⏱️ Horário: 19h às 20h</h2>
-    <div class="palestrante-box">
+.data-evento {
+    margin-top: 40px;
+    color: #002f87;
+}
 
-        <div class="item">
-            <img src="img/Palestrante3.jpeg" alt="Palestrante">
-            <div class="palestrante-info">
-                <h3>Palestrante: Ísis Angélica Guardarini</h3>         
-            </div>
-        </div>
-    
-        <div class="item">
-            <img src="img/Homenageada3.jpg" alt="Homenageada">
-            <div class="homenageada-info">
-                <h3>Homenageada: ADHONES      </h3>
-            </div>
-        </div>
-    
-    </div>
- 
-    <hr class="divisor-palestra">
+/* PALESTRANTE */
+.titulo-palestrante {
+    margin-top: 50px;
+    color: #002f87;
+}
 
-    
-    <h2 class="titulo-palestrante">A construção da identidade profissional do Secretário Executivo(a)</h2>
-    <br>
-    <h2 class="horario">⏱️ Horário: 20:15 às 21:15</h2>
+.palestrante-box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column; /* quebra para cima/baixo */
+    text-align: center;
+}
 
-    <div class="palestrante-box">
+.palestrante-box img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #0066ff;
+}
 
-        <div class="item">
-            <img src="img/palestrante4.jpeg" alt="Palestrante">
-            <div class="palestrante-info">
-                <h3>Palestrante: Rafael  Santos </h3>
-            </div>
-        </div>
-    
-        <div class="item">
-            <img src="img/homenageado4.jpeg" alt="Homenageada">
-            <div class="homenageada-info">
-                <h3>Homenageado: Instituto Lucas Paes – Nossa Senhora das Dores (SE)  </h3>
-            </div>
-        </div>
-    
-    </div>    
+/* CONTATO */
+.contato {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #000;
+}
 
-</div>
+/* RODAPÉ */
+footer {
+    margin-top: 60px;
+    background: linear-gradient(90deg, #0066ff, #002f87);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
 
-<div class="voltar-container">
-    <a href="index.html" class="btn-voltar">⬅ Voltar à página inicial</a>
-</div>
+/* Principal */
 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #002f87;
+}
 
-<footer>
-    © 2026 - JORNASEC  | Desenvolvido por Jonas Santos
-</footer>
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #002f87, #0066ff);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
 
-</body>
-</html>
+header img {
+    width: 120px;
+}
 
+/* HERO - CONTAGEM */
+.hero {
+    text-align: center;
+    margin-top: 40px;
+}
 
+#contador {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 15px 35px;
+    background: #e6f0ff;
+    color: #002f87;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.data {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* MENU DE OPÇÕES */
+.menu-opcoes {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.opcoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.card {
+    background: #e6f0ff;
+    padding: 20px;
+    text-decoration: none;
+    color: #003399;
+    border-radius: 15px;
+    border: 1px solid #d3d3d3;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    background: linear-gradient(90deg, #0066ff, #002f87);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.btn-detalhes {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: linear-gradient(90deg, #002f87, #0066ff);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* efeito hover */
+.card:hover .btn-detalhes {
+    background: linear-gradient(90deg, #0066ff, #002f87);
+    transform: scale(1.05);
+}
+.divisor-palestra {
+    width: 70%;
+    margin: 60px auto;
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, #002f87, #0066ff);
+    border-radius: 5px;
+}
+.voltar-container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #002f87, #0066ff);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background: linear-gradient(90deg, #0066ff, #002f87);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+.local-evento {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #002f87;
+    font-weight: bold;
+}
+/* PADRÃO (mobile primeiro) */
+.palestrante-box {
+    display: flex;
+    flex-direction: column;   /* empilhado no mobile */
+    align-items: center;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.palestrante-box .item {
+    width: 100%;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.palestrante-box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* DESKTOP (a partir de 768px) */
+@media (min-width: 768px) {
+    .palestrante-box {
+        flex-direction: row;      /* lado a lado no desktop */
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .palestrante-box .item {
+        width: 220px;
+    }
+    .opcoes-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #contador {
+        font-size: 40px;
+    }    
+}
